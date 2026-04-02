@@ -1,0 +1,16 @@
+services:
+  - type: web
+    runtime: node
+    name: mold
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: API_TOKEN
+        sync: false
+      - key: TIMEOUT_MS
+        value: "300000"
+      - key: MAX_PENDING
+        value: "100"
+      - key: PORT
+        value: "3000"
