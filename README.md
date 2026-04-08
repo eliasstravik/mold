@@ -5,7 +5,7 @@
 <h1 align="center">Mold</h1>
 
 <p align="center">
-  Webhook bridge for chaining Clay tables.
+  Turn Clay webhook tables into functions.
 </p>
 
 <p align="center">
