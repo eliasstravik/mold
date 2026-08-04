@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500" viewBox="0 0 960 500" role="img" aria-labelledby="title desc">
+  <title id="title">Mold connects two Clay tables</title>
+  <desc id="desc">A row in one Clay table calls Mold, another Clay table processes it, and the result returns to the original row.</desc>
+  <rect width="960" height="500" rx="20" fill="#f6f8fa"/>
+  <rect x="28" y="28" width="904" height="444" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+  <circle cx="54" cy="54" r="6" fill="#ff7b72"/><circle cx="74" cy="54" r="6" fill="#f2cc60"/><circle cx="94" cy="54" r="6" fill="#56d364"/>
+  <rect x="124" y="43" width="420" height="22" rx="11" fill="#eef1f4"/>
+
+  <rect x="58" y="100" width="250" height="324" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+  <rect x="78" y="124" width="210" height="34" rx="7" fill="#f6f8fa"/>
+  <text x="183" y="146" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#24292f">Clay · Table A</text>
+  <rect x="78" y="176" width="210" height="38" fill="#ffffff" stroke="#d8dee4"/>
+  <rect x="78" y="214" width="210" height="38" fill="#ddf4ff" stroke="#54aeff"/>
+  <rect x="78" y="252" width="210" height="38" fill="#ffffff" stroke="#d8dee4"/>
+  <path d="M145 176v114M214 176v114" stroke="#d8dee4"/>
+  <circle cx="94" cy="233" r="6" fill="#0969da"/>
+  <rect x="108" y="228" width="108" height="9" rx="4" fill="#54aeff" opacity=".55"/>
+  <rect x="78" y="310" width="210" height="52" rx="8" fill="#dafbe1" stroke="#4ac26b"/>
+  <text x="183" y="332" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#116329">Processed result returns</text>
+  <text x="183" y="351" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" fill="#116329">to the calling row</text>
+  <text x="183" y="397" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#24292f">1. Call workflow</text>
+
+  <path d="M324 240h48" stroke="#8c959f" stroke-width="3" stroke-linecap="round"/><path d="m362 230 12 10-12 10" fill="none" stroke="#8c959f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="388" y="100" width="210" height="324" rx="14" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+  <circle cx="420" cy="132" r="16" fill="#f5a97f"/><circle cx="438" cy="132" r="16" fill="#f6c85f"/><circle cx="429" cy="148" r="16" fill="#42b7d8"/>
+  <text x="493" y="140" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#24292f">Mold</text>
+  <rect x="410" y="174" width="166" height="38" rx="8" fill="#24292f"/>
+  <text x="493" y="198" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" font-weight="600" fill="#ffffff">POST /bridge</text>
+  <rect x="410" y="232" width="166" height="70" rx="7" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="493" y="255" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#57606a">Forward row</text>
+  <text x="493" y="276" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#57606a">Wait for callback</text>
+  <text x="493" y="291" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" fill="#57606a">No polling or database</text>
+  <rect x="410" y="324" width="166" height="42" rx="8" fill="#dafbe1" stroke="#4ac26b"/>
+  <text x="493" y="350" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="13" font-weight="700" fill="#116329">return result</text>
+  <text x="493" y="409" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#24292f">2. Bridge tables</text>
+
+  <path d="M614 240h48" stroke="#8c959f" stroke-width="3" stroke-linecap="round"/><path d="m652 230 12 10-12 10" fill="none" stroke="#8c959f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="678" y="100" width="224" height="324" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+  <rect x="698" y="124" width="184" height="34" rx="7" fill="#f6f8fa"/>
+  <text x="790" y="146" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#24292f">Clay · Table B</text>
+  <rect x="698" y="176" width="184" height="38" fill="#ffffff" stroke="#d8dee4"/>
+  <rect x="698" y="214" width="184" height="38" fill="#fff8c5" stroke="#d4a72c"/>
+  <rect x="698" y="252" width="184" height="38" fill="#ffffff" stroke="#d8dee4"/>
+  <path d="M760 176v114M824 176v114" stroke="#d8dee4"/>
+  <circle cx="714" cy="233" r="6" fill="#bf8700"/>
+  <rect x="728" y="228" width="112" height="9" rx="4" fill="#d4a72c" opacity=".55"/>
+  <rect x="698" y="310" width="184" height="52" rx="8" fill="#ddf4ff" stroke="#54aeff"/>
+  <text x="790" y="332" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#0550ae">Reusable workflow runs</text>
+  <text x="790" y="351" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="11" fill="#0550ae">then calls back to Mold</text>
+  <text x="790" y="397" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" font-weight="600" fill="#24292f">3. Process row</text>
+
+  <text x="348" y="323" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" font-weight="600" fill="#1a7f37">result</text>
+  <path d="M372 340h-48" stroke="#2ea44f" stroke-width="3" stroke-linecap="round"/>
+  <path d="m334 330-12 10 12 10" fill="none" stroke="#2ea44f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="638" y="323" text-anchor="middle" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10" font-weight="600" fill="#1a7f37">callback</text>
+  <path d="M662 340h-48" stroke="#2ea44f" stroke-width="3" stroke-linecap="round"/>
+  <path d="m624 330-12 10 12 10" fill="none" stroke="#2ea44f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
